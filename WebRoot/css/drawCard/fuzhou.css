@@ -1,0 +1,125 @@
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+	border: 0;
+}
+@-webkit-keyframes shake {
+	0% {
+		-webkit-transform: rotate(2deg) translate3d(0,0,0)
+	}
+
+	50% {
+		-webkit-transform: rotate(-2deg) translate3d(0,0,0)
+	}
+
+	100% {
+		-webkit-transform: rotate(2deg) translate3d(0,0,0)
+	}
+}
+
+@-moz-keyframes shake {
+	0% {
+		transform: rotate(2deg) translate3d(0,0,0)
+	}
+
+	50% {
+		transform: rotate(-2deg) translate3d(0,0,0)
+	}
+
+	100% {
+		transform: rotate(2deg) translate3d(0,0,0)
+	}
+}
+
+@-ms-keyframes shake {
+	0% {
+		transform: rotate(2deg) translate3d(0,0,0)
+	}
+
+	50% {
+		transform: rotate(-2deg) translate3d(0,0,0)
+	}
+
+	100% {
+		transform: rotate(2deg) translate3d(0,0,0)
+	}
+}
+
+.red{
+	width: 207px;
+	height: 510px;
+	border-radius: 15px;
+	/* box-shadow: 1px 1px 20px #666; */
+	position: fixed;
+	top:40%;
+	left: 30%;
+	overflow: hidden;
+	margin-left: -150px;
+	margin-top: -172px;
+	transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%;
+}
+.red img{
+	width:100%;
+	height: auto;
+}
+.red.shake{
+	animation:shake .3s infinite linear;
+	-webkit-animation:shake .3s infinite linear;
+}
+.windows{
+	width: 300px;
+	height: 200px;
+	position: absolute;
+	top: 50%;
+	margin-top: -100px;
+	left: 50%;
+	margin-left: -150px;
+	border-radius: 15px;
+	
+	display: none;
+	z-index: 11;
+}
+
+.close{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	background: #c7c7c7;
+	border-radius: 50%;
+	cursor: pointer;
+	text-align: center;
+	transition:all 0.5s linear;
+	-webkit-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+	-ms-transition:all 0.5s linear;
+	-o-transition:all 0.5s linear;
+}
+.close:hover{
+	transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+}
+.close img{
+	padding-top: 5px;
+
+}
+.opacity{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom:0;
+	background: black;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	display: none;
+}

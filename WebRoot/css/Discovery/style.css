@@ -1,0 +1,63 @@
+html,body,p,h1,h2,h3,h4,h5,h6,form,input,textarea,select,button,fieldset,legend,img,ul,ol,li,dl,dt,dd,th,td,pre,blockquote{margin:0;padding:0}
+a{text-decoration:none;color:#040404;blr:expression(this.onFocus=this.blur())}/*去掉a标签的虚线框，避免出现奇怪的选中区域*/
+html{height:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-font-smoothing:antialiased}
+body{
+	background:url(../../images/Discovery_bg.png) no-repeat center center;
+	filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";  
+	-moz-background-size:100% 100%;  
+  	background-size:100% 100%; 
+}
+body,button,input,select,textarea,h1,h2,h3,h4,h5,h6{font:14px "微软雅黑","Microsoft Yahei",arial,simhei}
+table{border-collapse:collapse;border-spacing:0}
+img,fieldset{border:0;vertical-align:middle}
+ul,li,ol{list-style:none}
+em,i{font-style:normal}
+iframe{display:block}
+.clear{display:block;overflow:hidden;clear:both;height:0;line-height:0;font-size:0;}
+.cont{width:100%;margin:0px auto;}
+.textcent{ text-align:center}
+
+.head {
+	height: 70px;
+	width: 100%; 
+}
+.head-left{
+	float: left;
+	height: 41px;
+	width: 135px;
+	margin-left: 20px;
+	padding-top: 0px;}
+/*nav导航盒子*/
+.nav{
+	float:right;
+	width:500px;
+	height:54px;
+	line-height:54px;
+	text-align:center;
+	font-size:16px;
+	position:relative;
+	background:url(../../images/Discovery_UI2.png) no-repeat center right;
+	padding-left:35px;	 
+	font-weight:bold; 
+	font-family:"YouYuan";
+	z-index:600;
+	border-radius: 10px;
+}
+/*nav-main*/
+ul.nav-main{width:100%;height:100%;list-style-type:none}
+
+/*导航条设置*/
+ul.nav-main>li{width:140px;height:100%;display:block;float:left;color:#DEB887;margin-right:5px}
+/*ul.nav-main>li:hover{background:#fff ; color:#be4355 }*/
+
+/*妖怪发现 以下是公共样式*/
+.region_scroll{padding:5px;float:right;}
+/*内容区css*/
+#wgt_scrollBox2 #contentBox2 .content{overflow:hidden;}
+#wgt_scrollBox2 #contentBox2 .content ul li{text-align: center;height:50px;padding:5px 55px;line-height:50px;overflow:hidden;}
+#wgt_scrollBox2 #contentBox2 .content ul li span{color:#000;font-family:Arial;float:right;}
+/*右侧按钮*/
+#wgt_scrollBox2 .auto_scroll_box{background:#CD853F;position:absolute;top:0;z-index:999;}
+#wgt_scrollBox2 .auto_scroll_box_btn{background:#8B4513;border-radius:10px;position:absolute;top:0;
+	
+

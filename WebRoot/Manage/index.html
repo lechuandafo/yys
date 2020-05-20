@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="renderer" content="webkit">
+    <title>阴阳师后台管理</title>  
+    <link rel="stylesheet" href="../css/pintuer.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <script src="../js/jquery.js"></script>   
+</head>
+<body style="background-color:#f2f9fd;">
+<div class="header bg-main">
+  <div class="logo margin-big-left fadein-top">
+    <h1><img src="../images/y.jpg" class="radius-circle rotate-hover" height="50" alt="" />阴阳师后台管理</h1>
+  </div>
+  <div class="head-l">&nbsp;&nbsp;<a class="button button-little bg-red" href="login.jsp"><span class="icon-power-off"></span> 退出登录</a> </div>
+</div>
+<div class="leftnav">
+  <div class="leftnav-title"><strong><span class="icon-list"></span>菜单列表</strong></div>
+  <h2>基本项</h2>
+  <ul style="display:block">
+    <li><a href="leader.jsp" target="right"><span class="icon-caret-right"></span>主角</a></li>
+    <li><a href="shikigami.jsp" target="right"><span class="icon-caret-right"></span>式神</a></li>
+    <li><a href="mitama.jsp" target="right"><span class="icon-caret-right"></span>御魂</a></li>    
+  </ul>   
+  <h2>大区</h2>
+  <ul>
+    <li><a href="service.jsp" target="right"><span class="icon-caret-right"></span>基本信息</a></li>
+    <li><a href="onlineGamerReport.jsp" target="right"><span class="icon-caret-right"></span>在线人数报表</a></li>        
+  </ul>
+  <h2>玩家</h2>
+  <ul>
+    <li><a href="gamerBasicInfo.jsp" target="right"><span class="icon-caret-right"></span>基本信息</a></li>
+    <li><a href="reply.jsp" target="right"><span class="icon-caret-right"></span>留言回复</a></li>
+    <li><a href="arenaRankReport.jsp" target="right"><span class="icon-caret-right"></span>竞技排名报表</a></li>        
+  </ul> 
+  <h2>物品</h2>
+  <ul>
+    <li><a href="product.jsp" target="right"><span class="icon-caret-right"></span>物品</a></li>
+    <li><a href="commodity.jsp" target="right"><span class="icon-caret-right"></span>商品信息</a></li>
+    <li><a href="commodityDetail.jsp" target="right"><span class="icon-caret-right"></span>商品详情</a></li>
+    <li><a href="commoditySellDailyReport.jsp" target="right"><span class="icon-caret-right"></span>消费情况报表</a></li>  
+  </ul> 
+  <h2>副本</h2>
+  <ul>
+    <li><a href="map.jsp" target="right"><span class="icon-caret-right"></span>地图</a></li>
+    <li><a href="instanceFight.jsp" target="right"><span class="icon-caret-right"></span>副本出战</a></li>
+    <li><a href="sGroup.jsp" target="right"><span class="icon-caret-right"></span>副本队伍</a></li>
+  </ul>
+  <h2>任务</h2>
+  <ul>
+    <li><a href="task.jsp" target="right"><span class="icon-caret-right"></span>任务</a></li>
+  </ul>
+</div>
+<script type="text/javascript">
+$(function(){//jQuery
+  $(".leftnav h2").click(function(){
+	  $(this).next().slideToggle(200);	
+	  $(this).toggleClass("on"); 
+  })
+  $(".leftnav ul li a").click(function(){
+	    $("#a_leader_txt").text($(this).text());
+  		$(".leftnav ul li a").removeClass("on");
+		$(this).addClass("on");
+  })
+  /*$("#shou_ye_txt").click(function()){
+	  	$(".ul li a #a_leader_txt").text();
+  })*/
+});
+</script>
+<ul class="bread">
+  <li><a href="info.html" id="shou_ye_txt" target="right" class="icon-home"> 首页</a></li>
+  <li><a href="##" id="a_leader_txt">网站信息</a></li>
+  
+</ul>
+<div class="admin">
+  <iframe scrolling="auto" rameborder="0" src="info.html" name="right" width="100%" height="100%"></iframe>
+</div>
+
+</body>
+</html>

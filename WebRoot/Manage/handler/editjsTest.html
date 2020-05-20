@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+// JavaScript Document
+$(function() {
+//获取class为caname的元素
+	$(".caname").click(function() {
+		var td = $(this);
+		var txt = td.text();
+		var input = $("<input type='text'value='" + txt + "'/>");
+		td.html(input);
+		input.click(function() { return false; });
+		//获取焦点
+		input.trigger("focus");
+		//文本框失去焦点后提交内容，重新变为文本
+		input.blur(function() {
+			var newtxt = $(this).val();
+			//判断文本有没有修改
+			if (newtxt != txt) {
+				if(confirm("是否确定修改？")){
+					td.html(newtxt);
+					
+					//更新数据库，将一行记录的所有信息都发给一个中转jsp，由中转jsp根据一个map转发给不同的目标jsp，再调用相应的servlet进行更新，这样就可以只写一个edit.js，但还是要写多个目标jsp，因为java的动态生成类的对象，动态调用对象的方法碰到困难，没有找到合适的方法，java的模板特性没有C++强,是更纯粹的面向对象。
+					var tdList = $.trim(td.parent().children()); //得到所有同胞元素,另外得到第一个同胞元素为parent().find('td:first').text()
+					
+					var uptIndex = td.index(); //得到被修改的td所在tr的位置(从0开始计数)
+					//ajax异步更改数据库,加参数date是解决缓存问题
+					alert(uptIndex);
+				}
+				else{
+					td.html(txt);
+				}
+			}
+			else
+			{
+				td.html(txt);
+			}
+
+		});
+	});
+}); 
+</script>
+</head>
+<body >
+	<table>
+		<tr>
+		  <td class="caname">17</td>      
+		  <td class="caname">&nbsp;</td>  
+		  <td class="caname">1</td>
+		  <td class="caname">1</td>
+		  <td class="caname">1</td>
+		  <td class="caname">1</td>
+		  <td class="caname">1</td>
+		  <td class="caname">1</td>
+		  <td class="caname">1</td>
+		  <td class="caname">1</td>  
+		</tr>
+	</table>
+	<table>
+		<tr>
+		  <td class="caname">17</td>      
+		  <td class="caname">&nbsp;</td>  
+		  <td class="caname">1</td>
+		  <td class="caname">1</td>
+		  <td class="caname">1</td>
+		  <td class="caname">1</td>
+		  <td class="caname">1</td>
+		  <td class="caname">1</td>
+		  <td class="caname">1</td>
+		  <td class="caname">1</td>  
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBEServiceIns</servlet-name>
+    <servlet-class>serv.BE.servBEServiceIns</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBEServiceDel</servlet-name>
+    <servlet-class>serv.BE.servBEServiceDel</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBECommodityInfoDel</servlet-name>
+    <servlet-class>serv.BE.servBECommodityInfoDel</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBECommodityInfoUpt</servlet-name>
+    <servlet-class>serv.BE.servBECommodityInfoUpt</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBEProductInfoIns</servlet-name>
+    <servlet-class>serv.BE.servBEProductInfoIns</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBEProductInfoDel</servlet-name>
+    <servlet-class>serv.BE.servBEProductInfoDel</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBEProductInfoUpt</servlet-name>
+    <servlet-class>serv.BE.servBEProductInfoUpt</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBETaskInfoIns</servlet-name>
+    <servlet-class>serv.BE.servBETaskInfoIns</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBETaskDel</servlet-name>
+    <servlet-class>serv.BE.servBETaskDel</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBETaskInfoUpt</servlet-name>
+    <servlet-class>serv.BE.servBETaskInfoUpt</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBECommodityInfoIns</servlet-name>
+    <servlet-class>serv.BE.servBECommodityInfoIns</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBEMitamaIns</servlet-name>
+    <servlet-class>serv.BE.servBEMitamaIns</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBELeaderIns</servlet-name>
+    <servlet-class>serv.BE.servBELeaderIns</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBEShikigamiIns</servlet-name>
+    <servlet-class>serv.BE.servBEShikigamiIns</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBDGamerLeader</servlet-name>
+    <servlet-class>serv.BD.servBDGamerLeader</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBDGamerLeaderQry</servlet-name>
+    <servlet-class>serv.BD.servBDGamerLeaderQry</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+  	<servlet-name>servFrontGamerGouYuQry</servlet-name>
+    <servlet-class>serv.Front.servFrontGamerGouYuQry</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servFrontQryShikigamiImagebyID</servlet-name>
+    <servlet-class>serv.Front.QryShikigamiImagebyID</servlet-class>
+  </servlet>
+    <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servODLogin</servlet-name>
+    <servlet-class>serv.OD.servODLogin</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servFrontLogin</servlet-name>
+    <servlet-class>serv.Front.servFrontLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servFrontUserService</servlet-name>
+    <servlet-class>serv.Front.servFrontUserService</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servFrontFirstLogin</servlet-name>
+    <servlet-class>serv.Front.servFrontFirstLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servFrontregister</servlet-name>
+    <servlet-class>serv.Front.servFrontregister</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servFrontGamerLeader</servlet-name>
+    <servlet-class>serv.Front.servFrontGamerLeader</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servFrontChouKa</servlet-name>
+    <servlet-class>serv.Front.servFrontChouKa</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servODUpt</servlet-name>
+    <servlet-class>serv.OD.servODUpt</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBDReplyIns</servlet-name>
+    <servlet-class>serv.BD.servBDReplyIns</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBDInstanceFightIns</servlet-name>
+    <servlet-class>serv.BD.servBDInstanceFightIns</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBDCommodityDetailIns</servlet-name>
+    <servlet-class>serv.BD.servBDCommodityDetailIns</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servBDSGroupIns</servlet-name>
+    <servlet-class>serv.BD.servBDSGroupIns</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servFrontReady</servlet-name>
+    <servlet-class>serv.Front.servFrontReady</servlet-class>
+  </servlet>
+
+
+
+
+  
+
+
+
+  <servlet-mapping>
+    <servlet-name>servBEServiceIns</servlet-name>
+    <url-pattern>/serv/BE/servBEServiceIns</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servBEServiceDel</servlet-name>
+    <url-pattern>/servlet/servBEServiceDel</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>servBECommodityInfoDel</servlet-name>
+    <url-pattern>/serv/BE/servBECommodityInfoDel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servBECommodityInfoUpt</servlet-name>
+    <url-pattern>/serv/BE/servBECommodityInfoUpt</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servBEProductInfoIns</servlet-name>
+    <url-pattern>/serv/BE/servBEProductInfoIns</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servBEProductInfoDel</servlet-name>
+    <url-pattern>/serv/BE/servBEProductInfoDel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servBEProductInfoUpt</servlet-name>
+    <url-pattern>/serv/BE/servBEProductInfoUpt</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servBETaskInfoIns</servlet-name>
+    <url-pattern>/serv/BE/servBETaskInfoIns</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servBETaskDel</servlet-name>
+    <url-pattern>/serv/BE/servBETaskDel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servBETaskInfoUpt</servlet-name>
+    <url-pattern>/serv/BE/servBETaskInfoUpt</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servBECommodityInfoIns</servlet-name>
+    <url-pattern>/serv/BE/servBECommodityInfoIns</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servBEMitamaIns</servlet-name>
+    <url-pattern>/serv/BE/servBEMitamaIns</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servBELeaderIns</servlet-name>
+    <url-pattern>/serv/BE/servBELeaderIns</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servBEShikigamiIns</servlet-name>
+    <url-pattern>/serv/BE/servBEShikigamiIns</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servBDGamerLeader</servlet-name>
+    <url-pattern>/serv/BD/servBDGamerLeader</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servBDGamerLeaderQry</servlet-name>
+    <url-pattern>/serv/BD/servBDGamerLeaderQry</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>servFrontGamerGouYuQry</servlet-name>
+    <url-pattern>/serv/Front/servFrontGamerGouYuQry</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servFrontQryShikigamiImagebyID</servlet-name>
+    <url-pattern>/serv/Front/QryShikigamiImagebyID</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>servFrontLogin</servlet-name>
+    <url-pattern>/serv/Front/servFrontLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servFrontUserService</servlet-name>
+    <url-pattern>/serv/Front/servFrontUserService</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servFrontFirstLogin</servlet-name>
+    <url-pattern>/serv/Front/servFrontFirstLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servFrontregister</servlet-name>
+    <url-pattern>/serv/Front/servFrontregister</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servFrontGamerLeader</servlet-name>
+    <url-pattern>/serv/Front/servFrontGamerLeader</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servFrontChouKa</servlet-name>
+    <url-pattern>/serv/Front/servFrontChouKa</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>servODUpt</servlet-name>
+    <url-pattern>/serv/OD/servODUpt</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servBDReplyIns</servlet-name>
+    <url-pattern>/serv/BD/servBDReplyIns</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servODLogin</servlet-name>
+    <url-pattern>/serv/OD/servODLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servBDInstanceFightIns</servlet-name>
+    <url-pattern>/serv/BD/servBDInstanceFightIns</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servBDCommodityDetailIns</servlet-name>
+    <url-pattern>/serv/BD/servBDCommodityDetailIns</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servBDSGroupIns</servlet-name>
+    <url-pattern>/serv/BD/servBDSGroupIns</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servFrontReady</servlet-name>
+    <url-pattern>/serv/Front/servFrontReady</url-pattern>
+  </servlet-mapping>
+		
+	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

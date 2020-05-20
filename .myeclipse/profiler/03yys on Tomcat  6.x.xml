@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<entry key="profiler.settings.instrument.empty.methods">true</entry>
+<entry key="ProfilerCPUSettings_profile_runnables">true</entry>
+<entry key="profiler.settings.n.profiled.threads.limit">32</entry>
+<entry key="ProfilerCPUSettings_filter_type">2</entry>
+<entry key="profiler.settings.obj.alloc.stack.sampling.depth">-1</entry>
+<entry key="profiler.settings.instrument.method.invoke">true</entry>
+<entry key="profiler.settings.instr.scheme">1</entry>
+<entry key="ProfilerMemorySettings_track_every">10</entry>
+<entry key="ProfilerMemorySettings_mode">4</entry>
+<entry key="ProfilerCPUSettings_root_classes">connDB.**
+dao.BD.**
+dao.BE.**
+dao.OD.**
+serv.BD.**
+serv.BE.**
+serv.Front.**
+vo.BD.**
+vo.BE.**
+vo.OD.**
+</entry>
+<entry key="ProfilerCPUSettings_filter_value">connDB.*,&#13;
+dao.BD.*,&#13;
+dao.BE.*,&#13;
+dao.OD.*,&#13;
+serv.BD.*,&#13;
+serv.BE.*,&#13;
+serv.Front.*,&#13;
+vo.BD.*,&#13;
+vo.BE.*,&#13;
+vo.OD.*</entry>
+<entry key="profiler.settings.istrument.getter.setter.methods">true</entry>
+<entry key="myeclipse.profiling.mode">0</entry>
+<entry key="ProfilerMemorySettings_stacktraces">-1</entry>
+<entry key="profiler.settings.sampling.interval">10</entry>
+<entry key="profiler.settings.cpu.profiling.type">0</entry>
+</properties>

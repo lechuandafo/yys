@@ -1,0 +1,115 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ page import="java.sql.*" %>
+<%@ page import="dao.BE.*"%>
+<%@ page import="vo.BE.*"%>
+<!DOCTYPE html>
+<html> <!--  lang="zh-cn" -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="renderer" content="webkit">
+    <title>大区管理</title>  
+    <link rel="stylesheet" href="../css/pintuer.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/pintuer.js"></script>
+    <script src="../js/edit.js"></script>  
+</head>
+<body>
+<div class="panel admin-panel">
+  <div class="panel-head"><strong class="icon-reorder"> 内容列表</strong></div>
+  <div class="padding border-bottom">  
+  <a class="button border-yellow" href="#add"><span class="icon-plus-square-o"></span> 添加大区</a>
+  </div> 
+  <table class="table table-hover text-center">
+    <tr>
+      <th width="70">大区ID</th>     
+      <th width="92">区名</th>
+      <th width="87">在线人数</th>  
+      <th width="86">最大容量</th>
+      
+    </tr>
+    <!--查询显示并提供删除链接，删除链接以URL的形式传递主码信息，故只需写相应的jsp调用dao和vo来删除 -->
+	<%
+		daoBEService dao = new daoBEService();
+		ArrayList List = dao.qryService();  
+        int i=0;      
+        while(i<List.size())  
+        { voBEService vo=(voBEService)List.get(i);
+          i++;
+     %> 
+           <tr>
+	         <td class="caname"><%=vo.getServiceNo()%> </td> 
+	         <td class="caname"><%=vo.getServiceName()%> </td> 
+	         <td class="caname"><%=vo.getCurrentNumber()%> </td>
+	         <td class="caname"><%=vo.getCapacity()%> </td> 
+	         <td width="106">
+      		 <div class="button-group">
+	      		 <a class="button border-red" 
+	      		 <%out.println("href=\"handler/delService.jsp?serviceID="+vo.getServiceNo()+"\"");%> 
+	      		 onclick="return del()"><span class="icon-trash-o"></span> 删除</a>
+      		 </div>
+             </td> 
+		   </tr>    
+     <%
+        }
+	 %>   
+    
+  </table>
+</div>
+<script>
+function del(){
+	if(confirm("您确定要删除吗?")){
+		//window.location="removeService.jsp?serviceID="+serviceID;
+		return true;
+	}
+	else 
+		return false;
+}
+</script>
+<div id="add" class="panel admin-panel margin-top">
+  <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>增加区</strong></div>
+  <div class="body-content">
+  <!-- 通过表单提交插入信息，故用servelet调用dao和vo进行插入 -->
+    <form class="form-x" action="../serv/BE/servBEServiceIns" method="post">   
+      <input type="hidden" name="id"  value="" />  
+      <div class="form-group">
+        <div class="label">
+          <label>区ID：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" name="serviceID" value="" data-validate="required:请输入" />         
+          <div class="tips"></div>
+        </div>
+      </div> 
+      <div class="form-group">
+        <div class="label">
+          <label>区名：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" name="serviceName" value="" data-validate="required:请输入" />         
+          <div class="tips"></div>
+        </div>
+      </div> 
+      <div class="form-group">
+        <div class="label">
+          <label>最大容量：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" name="serviceCap" value="" data-validate="required:请输入" />         
+          <div class="tips"></div>
+        </div>
+      </div>  
+     <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+        <div class="field">
+          <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</body></html>
